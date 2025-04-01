@@ -47,7 +47,8 @@
     box-shadow: var(--shadow-lg);
     padding: 2.5rem 2rem;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
+    overflow: visible;
   }
   
   .container::before {
@@ -89,6 +90,7 @@
     position: relative;
     width: 100%;
     margin-bottom: 1rem;
+    z-index: 20; /* Ensure it's above other elements */
   }
   
   #searchBox {

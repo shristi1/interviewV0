@@ -212,9 +212,9 @@ class TrieNode {
         const itemRect = item.getBoundingClientRect()
   
         if (itemRect.bottom > containerRect.bottom) {
-          container.scrollTop += itemRect.bottom - containerRect.bottom
+          container.scrollTop += itemRect.bottom - containerRect.bottom + 5 // Add 5px buffer
         } else if (itemRect.top < containerRect.top) {
-          container.scrollTop -= containerRect.top - itemRect.top
+          container.scrollTop -= containerRect.top - itemRect.top + 5 // Add 5px buffer
         }
       }
     })
